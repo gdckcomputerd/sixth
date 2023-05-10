@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Semester VI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="www.gdcassignments.netlify.app">Assignments :)</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="www.gdcassignments.netlify.app">Home</a></li>
+        <li><a href="www.gdcassignments.netlify.app">About</a></li>
+        <li><a href="www.akki69.prohosts.org">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <div class="about">
+    <div class="content">
+      <div class="title">Write HTML code to create a form for entering the details of students with textboxes, radiobuttons &  checkboxes etc.</div>
+      <br>
+      <br>
+      &lt;!DOCTYPE html&gt;
+      <br>
+&lt;html lang="en"&gt;
+<br>
+&lt;head&gt;
+<br>
+    &lt;title&gt;Question 13&lt;/title&gt;
+    <br>
+&lt;/head&gt;
+<br>
+&lt;body&gt;
+<br>
+    
+    &lt;h1&gt;Welcome to GDC Kishtwar Student survey&lt;/h1&gt;
+    <br>
+    &lt;form action="#"&gt;
+    <br>
+        &lt;label for="name"&gt;Name :
+        <br>
+            &lt;input type="text" name="name" id="name" placeholder="Enter Your Name"&gt;
+            <br>
+        &lt;/label&gt;
+        <br>
+        <br>
+        <br>
+        &lt;label for="email"&gt;Email:
+        <br>
+            &lt;input type="email" name="email" id="email" placeholder="Enter Your Email"&gt;
+            <br>
+        &lt;/label&gt;
+        <br>
+        <br>
+        <br>
+        &lt;label for="gender"&gt;
+            Gender:
+            <br>
+        &lt;input type="radio" name="gender" value="male"&gt;
+         Male
+         <br>
+        &lt;input type="radio" name="gender" value="female"&gt;
+         Female
+        <br>
+        &lt;/label&gt;
+        <br>
+        <br>
+        <br>
+
+        &lt;label for="stream"&gt;
+      
+            Select your Stream:
+            <br>
+            &lt;input type="checkbox" name="stream"&gt;
+            Science
+            <br>
+            &lt;input type="checkbox" name="stream"&gt;
+            Arts
+            <br>
+            &lt;input type="checkbox" name="stream"&gt;
+            Commerce
+            <br>
+        &lt;/label&gt;
+        <br>
+        <br>
+        <br>
+        &lt;button>Submit&lt;/button&gt;
+        <br>
+    &lt;/form&gt;
+    <br>
+&lt;/body&gt;
+<br>
+&lt;/html&gt;
+<br>
+  
+      <br>
+      <br><br>
+      <h4>Output :</h4>
+      <img src="q13.jpg" alt="Internet Check kro">
+      <p><strong style="color:red;">NOTE :</strong> Please Draw the Output on Left side Blank Page</p>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>

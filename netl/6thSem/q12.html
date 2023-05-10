@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Semester VI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="www.gdcassignments.netlify.app">Assignments :)</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="www.gdcassignments.netlify.app">Home</a></li>
+        <li><a href="www.gdcassignments.netlify.app">About</a></li>
+        <li><a href="www.akki69.prohosts.org">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <div class="about">
+    <div class="content">
+      <div class="title">Create a web page of your choice. Divide the browser screen into two vertical frames. The frame on left will be a menu consisting of hyperlinks. Clicking on any one of these links leads to opening of the page in the target right hand side frame. </div>
+      <br>
+      <br>
+      <html lang="en">
+        <head>
+&lt;!DOCTYPE html&gt;
+<br>
+&lt;title&gt;Question 12&lt;/title&gt;
+<br>
+&lt;frameset cols="50%,50%"&gt;
+<br>
+&lt;frame&gt;&lt;/frame&gt;
+<br>
+&lt;/frameset&gt;
+<br>
+&lt;/head&gt;
+<br>
+&lt;/html&gt;
+<br>
+  
+      <br>
+      <br><br>
+      <h4>Output :</h4>
+      <img src=".jpg" alt="Internet Check kro">
+      <p><strong style="color:red;">NOTE :</strong> Please Draw the Output on Left side Blank Page</p>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>

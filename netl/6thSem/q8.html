@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Semester VI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="www.gdcassignments.netlify.app">Assignments :)</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="www.gdcassignments.netlify.app">Home</a></li>
+        <li><a href="www.gdcassignments.netlify.app">About</a></li>
+        <li><a href="www.akki69.prohosts.org">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  
+  <br>
+  <div class="about">
+    <div class="content">
+      <div class="title">Write HTML code to demonstrate use of ROWSPAN and COLSPAN attribute of &lt;th&gt; & &lt;td&gt; tag</div>
+      <br>
+      <br>
+      
+      &lt;!DOCTYPE html&gt;
+      <br>
+      &lt;html lang="en"&gt;
+      <br>
+      &lt;head&gt;
+      <br>
+      &lt;title&gt;Question 8&lt;/title&gt;
+      <br>
+      &lt;/head&gt;
+      <br>
+      &lt;body&gt;
+      <br>
+     
+      <br>
+      <!-- Write HTML code to demonstrate use of ROWSPAN and COLSPAN attribute of <th> & <td> tag -->
+        &lt;table border="1"&gt;
+        <br>
+        &lt;tr&gt;
+        <br>
+        &lt;th&gt;Header 1&lt;/th&gt;
+        <br>
+        &lt;th colspan="2"&gt;Header 2 - Column Span 2&lt;/th&gt;
+        <br>
+        &lt;/tr&gt;
+        <br>
+        &lt;tr&gt;
+        <br>
+        &lt;th rowspan="2"&gt;Header 3 - Row Span 2&lt;/th&gt;
+        <br>
+        &lt;td&gt;Cell 1&lt;/td&gt;
+        <br>
+        &lt;td&gt;Cell 2&lt;/td&gt;
+        <br>
+        &lt;/tr&gt;
+        <br>
+        &lt;tr&gt;
+        <br>
+        &lt;td&gt;Cell 3&lt;/td&gt;
+        <br>
+        &lt;td&gt;Cell 4&lt;/td&gt;
+        <br>
+        &lt;/tr&gt;
+        <br>
+        &lt;tr&gt;
+        <br>
+        &lt;td colspan="3"&gt;Footer&lt;/td&gt;
+        <br>
+        &lt;/tr&gt;
+        <br>
+        &lt;/table&gt;
+        <br>
+          <br>
+          &lt;/body&gt;
+          <br>
+          &lt;/html&gt;
+  
+      <br>
+      <br><br>
+      <h4>Output :</h4>
+      <img src="q8.jpg" alt="Internet Check kro">
+      <p><strong style="color:red;">NOTE :</strong> Please Draw the Output on Left side Blank Page</p>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>
